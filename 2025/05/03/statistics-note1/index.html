@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>statistics_note1 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="Statistical Reporting in User ResearchBasic Statistical TermsMean and Standard Deviation M (Mean): The arithmetic average of a group of values. SD (Standard Deviation): A measure of how spread out the">
+<meta property="og:type" content="article">
+<meta property="og:title" content="statistics_note1">
+<meta property="og:url" content="http://example.com/2025/05/03/statistics-note1/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Statistical Reporting in User ResearchBasic Statistical TermsMean and Standard Deviation M (Mean): The arithmetic average of a group of values. SD (Standard Deviation): A measure of how spread out the">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/statistics-note1/1.jpg">
+<meta property="article:published_time" content="2025-05-03T08:15:52.000Z">
+<meta property="article:modified_time" content="2025-05-07T04:58:25.023Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/statistics-note1/1.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -69,9 +75,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-statistics-note1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-statistics-note1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2025/05/03/statistics-note1/" class="article-date">
   <time class="dt-published" datetime="2025-05-03T08:15:52.000Z" itemprop="datePublished">2025-05-03</time>
@@ -84,8 +88,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/05/03/statistics-note1/">statistics_note1</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      statistics_note1
     </h1>
   
 
@@ -453,199 +457,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-t-test and ANOVA" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/04/26/t-test%20and%20ANOVA/" class="article-date">
-  <time class="dt-published" datetime="2025-04-26T05:49:20.000Z" itemprop="datePublished">2025-04-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/04/26/t-test%20and%20ANOVA/">t-test and ANOVA</a>
-    </h1>
+    <a href="/2025/04/26/t-test%20and%20ANOVA/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">t-test and ANOVA</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="t-test-ANOVA-概览"><a href="#t-test-ANOVA-概览" class="headerlink" title="t-test &amp; ANOVA 概览"></a>t-test &amp; ANOVA 概览</h1><p>简要介绍本文内容：什么是 t-test 和 ANOVA，它们在什么场景下使用。</p>
-<hr>
-<h2 id="1-t-test"><a href="#1-t-test" class="headerlink" title="1. t-test"></a>1. t-test</h2><h3 id="1-1-什么是-t-test？"><a href="#1-1-什么是-t-test？" class="headerlink" title="1.1 什么是 t-test？"></a>1.1 什么是 t-test？</h3><ul>
-<li><p>定义</p>
-<p>  比较<strong>两个</strong>样本（两组数据）的<strong>均值</strong>是否存在显著差异的统计方法。</p>
-<ul>
-<li><p>例子：比较 A 班和 B 班的数学成绩是否有显著差异</p>
-<ul>
-<li><p>均值相减  82-80&#x3D;2；因此B班整体强于A班。</p>
-<p>  A：完全是巧合！</p>
-</li>
-<li><p>Indepentent two-sample t-test （独立样本t检验）</p>
-<p>  B：这不太可能是偶然！</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<p>补充知识</p>
-<p><strong>均值（Mean）</strong></p>
-<ul>
-<li>均值：对观察值取平均数，例如一组数，2，2，3，5，5，7，8的均值为4.57</li>
-</ul>
-<p><strong>标准差</strong>（Standard　Deviation） <strong>方差</strong>（Variance）</p>
-<p><strong>残差（residual）</strong></p>
-<pre><code>    残差是观察值与模型估计值之间的差。以回归分析为例，回归方程y=b0+b1x，当知道b0和b1时这就是一个真实的回归模型。比如y=2+3x。取一个数值（1,2），则模型估计值为y=2+3×1=5。残差为2-5=-3。因此，只要有一个确定的取值以及模型，则模型肯定有一个估计值，也就有一个残差了。对残差进行分析是回归分析的一个重要部分。
-</code></pre>
-<p><img src="/./t-test%20and%20ANOVA/image1.png" alt="image1"></p>
-<ul>
-<li><p><strong>P-value(P值)</strong></p>
-<pre><code>  p值就是当原假设为真时所得到的样本观察结果或更极端结果出现的概率。如果p值很小，说明在原假设下极端观测结果的发生概率很小。而如果出现了，根据小概率原理，就有理由拒绝原假设；p值越小，拒绝原假设的理由越充分。
-</code></pre>
-</li>
-</ul>
-<hr>
-<h3 id="1-2-t-test-的种类"><a href="#1-2-t-test-的种类" class="headerlink" title="1.2 t-test 的种类"></a>1.2 t-test 的种类</h3><ul>
-<li><p>单样本 t 检验 (One-sample t-test)</p>
-<pre><code>  样本均值与已知的总体均值之间是否存在显著差异：
-  A班同学智商与平均智商之间是否存在显著差异？
-</code></pre>
-</li>
-<li><p>独立样本 t 检验 (Independent samples t-test)</p>
-</li>
-<li><p>配对样本 t 检验 (Dependent Paired samples t-test)</p>
-<pre><code>  样本来自同一批人 或者 对两个不同样本进行配对
-</code></pre>
-</li>
-</ul>
-<h3 id="1-3-t-test-的前提条件"><a href="#1-3-t-test-的前提条件" class="headerlink" title="1.3 t-test 的前提条件"></a>1.3 t-test 的前提条件</h3><ul>
-<li>数据分布</li>
-<li>方差齐性</li>
-<li>样本独立性</li>
-</ul>
-<h3 id="1-4-t-test-的步骤"><a href="#1-4-t-test-的步骤" class="headerlink" title="1.4 t-test 的步骤"></a>1.4 t-test 的步骤</h3><ul>
-<li>提出假设</li>
-<li>选择显著性水平</li>
-<li>计算 t 值</li>
-<li>查表&#x2F;计算 p 值</li>
-<li>做出统计决策</li>
-</ul>
-<hr>
-<h2 id="2-ANOVA（方差分析）"><a href="#2-ANOVA（方差分析）" class="headerlink" title="2. ANOVA（方差分析）"></a>2. ANOVA（方差分析）</h2><h3 id="2-1-什么是-ANOVA？"><a href="#2-1-什么是-ANOVA？" class="headerlink" title="2.1 什么是 ANOVA？"></a>2.1 什么是 ANOVA？</h3><ul>
-<li>定义</li>
-<li>常见应用场景（三组及以上样本均值比较）</li>
-</ul>
-<h3 id="2-2-ANOVA-的种类"><a href="#2-2-ANOVA-的种类" class="headerlink" title="2.2 ANOVA 的种类"></a>2.2 ANOVA 的种类</h3><ul>
-<li>单因素方差分析 (One-way ANOVA)</li>
-<li>双因素方差分析 (Two-way ANOVA)</li>
-</ul>
-<h3 id="2-3-ANOVA-的前提条件"><a href="#2-3-ANOVA-的前提条件" class="headerlink" title="2.3 ANOVA 的前提条件"></a>2.3 ANOVA 的前提条件</h3><ul>
-<li>正态性</li>
-<li>方差齐性</li>
-<li>独立性</li>
-</ul>
-<h3 id="2-4-ANOVA-的步骤"><a href="#2-4-ANOVA-的步骤" class="headerlink" title="2.4 ANOVA 的步骤"></a>2.4 ANOVA 的步骤</h3><ul>
-<li>提出假设</li>
-<li>计算组间、组内方差</li>
-<li>计算 F 值</li>
-<li>查表&#x2F;计算 p 值</li>
-<li>做出统计决策</li>
-</ul>
-<hr>
-<h2 id="3-t-test-与-ANOVA-的比较"><a href="#3-t-test-与-ANOVA-的比较" class="headerlink" title="3. t-test 与 ANOVA 的比较"></a>3. t-test 与 ANOVA 的比较</h2><ul>
-<li>相同点</li>
-<li>不同点</li>
-<li>如何选择使用 t-test 还是 ANOVA</li>
-</ul>
-<hr>
-<p><img src="/./t-test%20and%20ANOVA/sum.jpeg" alt="image1"></p>
-<h2 id="4-总结"><a href="#4-总结" class="headerlink" title="4. 总结"></a>4. 总结</h2><p>总结 t-test 和 ANOVA 的核心要点，并强调理解假设检验的重要性。</p>
-<hr>
-<h2 id="5-参考资料"><a href="#5-参考资料" class="headerlink" title="5. 参考资料"></a>5. 参考资料</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/344261787">https://www.zhihu.com/question/344261787</a></li>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/413770248">https://zhuanlan.zhihu.com/p/413770248</a></li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/26/t-test%20and%20ANOVA/" data-id="cmahtm5860001mk09edxu4zly" data-title="t-test and ANOVA" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ANOVA/" rel="tag">ANOVA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hypothesis-Testing/" rel="tag">Hypothesis Testing</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Statistics/" rel="tag">Statistics</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/t-test/" rel="tag">t-test</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2025/04/24/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2025-04-24T11:04:37.584Z" itemprop="datePublished">2025-04-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/04/24/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2025/04/24/hello-world/" data-id="cmahtm57t0000mk092x8rdb3u" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
